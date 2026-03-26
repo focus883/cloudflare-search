@@ -30,7 +30,7 @@ workers_dev = true
 # 环境变量(可选)
 # ============================================
 [vars]
- Google Custom Search API 配置
+# Google Custom Search API 配置
  GOOGLE_API_KEY = "AIzaSyDw6yT8q3bFlGXbLgAEJOn0o5hxLPc-RFk"
  GOOGLE_CX = "105d6df15cea642f0"
 

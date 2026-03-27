@@ -23,12 +23,7 @@ export const env = {
   TOKEN: null,
 };
 
-// export const setEnv = (newEnv) => {
-//  Object.assign(env, newEnv);
-//};
-
-export const setEnv = (workerEnv) => {
-  env.GOOGLE_API_KEY = workerEnv.GOOGLE_API_KEY || null;
-  env.GOOGLE_CX = workerEnv.GOOGLE_CX || null;
-  env.TOKEN = workerEnv.TOKEN || null;
+ export const setEnv = (newEnv) => {
+  Object.assign(env, newEnv);
 };
+

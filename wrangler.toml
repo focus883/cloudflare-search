@@ -9,7 +9,7 @@ main = "worker.js"
 
 # 兼容日期 - 锁定 Workers 运行时行为
 # 使用你开发时的日期,避免未来行为变更影响你的代码
-compatibility_date = "2024-12-04"
+compatibility_date = "2026-03-26"
 
 # 自动使用 workers.dev 子域名
 # 设置为 true 会自动分配一个 xxx.workers.dev 域名
@@ -31,13 +31,13 @@ workers_dev = true
 # ============================================
 [vars]
 # Google Custom Search API 配置
- GOOGLE_API_KEY = ""
- GOOGLE_CX = ""
+# GOOGLE_API_KEY = ""
+# GOOGLE_CX = ""
 
 # API 访问令牌(可选)
 # 配置后，所有 /search 请求都需要提供此 token 进行鉴权
 # 可以通过 Authorization header (Bearer token) 或 query 参数 (?token=xxx) 传递
- TOKEN = ""
+# TOKEN = ""
 
 # ============================================
 # 环境配置(可选)

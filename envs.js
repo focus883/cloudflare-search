@@ -23,15 +23,12 @@ export const env = {
   TOKEN: null,
 };
 
+// export const setEnv = (newEnv) => {
+//  Object.assign(env, newEnv);
+//};
 
-// src/envs.js
-
-// 从 Cloudflare Worker 的 env 对象中提取配置
-export function getConfig(env) {
-  return {
-    DEFAULT_TIMEOUT: env.DEFAULT_TIMEOUT || "3000",
-    GOOGLE_API_KEY: env.GOOGLE_API_KEY || null,
-    GOOGLE_CX: env.GOOGLE_CX || null,
-    TOKEN: env.TOKEN || null,
-  };
-}
+export const setEnv = (workerEnv) => {
+  env.GOOGLE_API_KEY = workerEnv.GOOGLE_API_KEY || null;
+  env.GOOGLE_CX = workerEnv.GOOGLE_CX || null;
+  env.TOKEN = workerEnv.TOKEN || null;
+};
